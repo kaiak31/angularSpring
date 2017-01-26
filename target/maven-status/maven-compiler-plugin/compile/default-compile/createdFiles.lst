@@ -1,0 +1,4 @@
+com/kaibot/web/Greeting.class
+com/kaibot/config/SpringConfig.class
+com/kaibot/DemoApplication.class
+com/kaibot/controller/HelloWorldController.class
