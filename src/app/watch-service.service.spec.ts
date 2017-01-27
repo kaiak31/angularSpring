@@ -3,7 +3,6 @@
 import { TestBed, async, inject } from '@angular/core/testing';
 import { WatchServiceService } from './watch-service.service';
 import {Watch} from "./watch";
-import {Query} from "@angular/core";
 import {WatchQuery} from "./watch-query";
 
 describe('WatchServiceService', () => {

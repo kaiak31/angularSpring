@@ -1,5 +1,4 @@
 export class Watch {
-  id: number;
   make: string;
   model: string;
   price: number;

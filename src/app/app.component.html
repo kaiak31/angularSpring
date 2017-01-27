@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<section class="todoapp">
+  <header class="header">
+    <h1>Watches</h1>
+  </header>
+  <section class="main" *ngIf="watches.length > 0">
+    <ul class="watch-list">
+      <li *ngFor="let watch of watches">
+        <div class="view">
+          <label>{{watch.model}} - {{watch.make}}</label>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer" *ngIf="watches.length > 0">
+    <span class="todo-count"><strong>{{watches.length}}</strong> {{watches.length == 1 ? 'item' : 'items'}} left</span>
+  </footer>
+</section>

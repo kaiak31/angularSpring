@@ -12,23 +12,17 @@ export class WatchServiceService {
   }
 // Simulate GET /watch
   getAllWatches(): Watch[] {
+    console.log(this.watches);
     return this.watches;
   }
-  // Simulate GET /todos/:id
-  getWatchById(id: number): Watch {
-    return this.watches
-      .filter(watch => watch.sku === sku)
-      .pop();
-  }
 
   // Simulate GET /todos/:id
-  getWatchByMake(make: string): Watch {
+  getWatchByMake(make: string): Watch[] {
     return this.watches
       .filter(watch => watch.make === make)
-
     }
 
-  getByCriteria(criteria: WatchQuery) {
+  getByCriteria(criteria: WatchQuery): Watch[] {
     return this.watches
       .filter((watch) => {
         if(criteria.make !== undefined && criteria.make != watch.make){
